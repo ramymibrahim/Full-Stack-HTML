@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First HTML Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>This is my first HTML Page</h1>
+    </header>
+    <aside><h2>This is aside menu</h2></aside>
+    <section>
+      <h2>Headers Section</h2>
+      <article>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+      </article>
+    </section>
+    <section>
+      <p id="paragraph1">
+        <strong>Lorem ipsum dolor sit <em>amet consectetur</em></strong>
+        <em>adipisicing elit.</em> Rem ab illum expedita eum blanditiis incidunt
+        maiores delectus quae saepe voluptatum, libero nostrum quaerat dolor
+        odit distinctio inventore praesentium facilis consequatur?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
+        maiores tempora voluptate tempore, vitae quaerat, eos natus, sint
+        asperiores corrupti repellendus beatae et? Accusamus sit obcaecati unde
+        labore nemo veritatis.
+      </p>
+    </section>
+    <section>
+      <h3>Links</h3>
+      <a href="https://www.google.com">Click Here</a>
+      <a href="https://www.yahoo.com">Click Here</a>
+      <br />
+      <a href="test.html" target="_blank">Relative Position Same Folder</a>
+      <a href="pages/hiddenpage.html">Relative Position other folder</a>
+      <a href="/pages">Absolute Position</a>
+      <a href="/pages/../pages/../test.html">Absolute + Relative Position</a>
+    </section>
+    <hr />
+    <section>
+      <h1>Form Controls</h1>
+      <form
+        action="pages/index.html"
+        method="get"
+      >
+        <label for="first_name">First Name</label>
+        <input
+          id="firstName"
+          type="text"
+          placeholder="First Name"
+          name="first_name"
+        />
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name" name="last_name" />
+        <label>Email</label>
+        <input type="email" name="email" />
+        <label>Password</label>
+        <input type="password" name="password" />
+        <label>checkbox</label>
+        <input type="checkbox" /><br />
+        <label>radio</label>
+        <input type="radio" name="isDeveloper" /><br />
+        <label>radio</label>
+        <input type="radio" name="isDeveloper" /><br />
+        <label>color</label>
+        <input type="color" /><br />
+        <label>date</label>
+        <input type="date" /><br />
+        <label>datetime</label>
+        <input type="datetime-local" /><br />
+        <label>file</label>
+        <input type="file" /><br />
+        <label>month</label>
+        <input type="month" /><br />
+        <label>week</label>
+        <input type="week" /><br />
+        <label>range</label>
+        <input type="range" min="10" max="1000" /> <br />
+        <label>number</label>
+        <input type="number" step="0.01" /><br />
+        <label>search</label>
+        <input type="search" /><br />
+        <label>tel</label>
+        <input type="tel" /><br />
+        <label>time</label>
+        <input type="time" /><br />
+        <label>url</label>
+        <input type="url" /><br />
+        <label>Text area</label>
+        <textarea>Has no value, Text is inside</textarea><br />
+        <label>Select</label>
+        <select>
+          <optgroup label="Egypt">
+            <option value="1">Cairo</option>
+            <option value="2">Alex</option>
+          </optgroup>
+          <optgroup label="SA">
+            <option value="3">Ryadh</option>
+            <option value="4">Dammam</option>
+          </optgroup></select
+        ><br />
+
+        <fieldset>
+          <legend>Field set and Buttons</legend>
+          <p>
+            The difference between input type button and &lt;Button&gt; is that,
+            button can contain content
+          </p>
+          <input type="button" value="button" /><br />
+          <button type="button">Button</button><br />
+
+          <input type="reset" value="reset" /><br />
+          <button type="reset">Reset</button><br />
+
+          <input type="submit" value="submit" /><br />
+          <button type="submit">Submit</button><br />
+          <label>image (submit)</label>
+          <input type="image" src="./img/cat-2.jpg" /><br />
+        </fieldset>
+
+        <label>Data list</label>
+        <input list="browsers" name="browser" id="browser" />
+        <datalist id="browsers">
+          <option value="Edge"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+        <label>hidden (Why should we use it)</label>
+        <input type="hidden" name="id" value="6" /><br />
+        <!-- This is Comment -->
+      </form>
+    </section>
+    <section>
+      <h2>Output test</h2>
+      <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50" />
+        +<input type="number" id="b" value="25" /> =<output
+          name="x"
+          for="a b"
+        ></output>
+      </form>
+    </section>
+    <hr />
+    <div>
+      <img src="./img/cat-2.jpg" width="300" height="200" />
+      <img src="/img/cat-3.jpg" />
+      <img src="img/cat-4.jpg" />
+      <img src="img/carousel-1.jpg" />
+    </div>
+    <div>
+        <h4>HTML Entities</h4>
+        <a href="pages">Test</a>&nbsp;&nbsp;&nbsp;<a href="pages">Test</a>
+        &lt;
+        &gt;
+        &amp;
+        &quot;
+        &copy;
+        &reg;
+    </div>
+  </body>
+</html>
