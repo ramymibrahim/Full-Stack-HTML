@@ -1,4 +1,8 @@
 Task Name: Product Description Page
 Create a single HTML Page that contains Product Title, Image, Features and Specs table as shown in
 Task image (task.png)
-Git Test
+
+
+git init
+git branch -M main
+git remote add origin https://github.com/ramymibrahim/Test.git
