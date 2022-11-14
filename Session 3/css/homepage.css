@@ -3,6 +3,12 @@
   padding: 0;
   list-style: none;
 }
+:root {
+  --padding-left-right: 48px;
+  --secondary-color: #6c757d;
+  --active-color: #6933ff;
+  --primary-color: #3d464d;
+}
 /* @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto/Roboto-Regular.ttf);
@@ -12,7 +18,7 @@ body {
 }
 .small-nav,
 #main-header {
-  padding: 0 48px;
+  padding: 0 var(--padding-left-right);
 }
 .small-nav {
   background-color: #f5f5f5;
@@ -28,7 +34,7 @@ body {
 
 .small-nav a {
   text-decoration: none;
-  color: #6c757d;
+  color: var(--secondary-color);
 }
 
 .small-nav a:hover {
@@ -88,7 +94,7 @@ body {
 }
 .small-nav .lists .list ul li:active {
   color: #fff;
-  background-color: #ffd333;
+  background-color: var(--active-color);
 }
 
 #main-header {
@@ -102,17 +108,17 @@ body {
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ffd333;
+  color: var(--active-color);
   display: flex;
 }
 #main-header .logo span {
-  background-color: #3d464d;
+  background-color: var(--primary-color);
   padding: 0.2rem 0.3rem;
 }
 
 #main-header .logo span:last-child {
-  background-color: #ffd333;
-  color: #3d464d;
+  background-color: var(--active-color);
+  color: var(--primary-color);
 }
 
 .search-bar form {
@@ -129,7 +135,7 @@ body {
 }
 
 .search-bar input:focus {
-  border-color: #ffefb3;
+  border-color: var(--active-color);
   outline: 0;
   box-shadow: none;
 }
@@ -139,16 +145,16 @@ body {
   border: 1px solid #ced4da;
   padding: 0 10px;
   font-weight: 400;
-  color: #ffd333;
+  color: var(--active-color);
   font-size: 1rem;
   border-left: none;
 }
 
-.customer-service p{
-    text-align: center;
+.customer-service p {
+  text-align: center;
 }
-.customer-service p::first-line{
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 1.6rem;
+.customer-service p::first-line {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.6rem;
 }
