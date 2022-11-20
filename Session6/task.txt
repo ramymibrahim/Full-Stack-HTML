@@ -1,0 +1,9 @@
+JS: Add Product Component
+Edit HTML%20Course/online-shop-website-template/cart.html Page
+Implement Add Button that adds a new <tr> in tbody with id="products"
+Product Name, Price, and Quantity will be added as they are
+Total must be calculated.
+
+You should validate the input values and be sure that price and Quantity are +ve numbers
+
+Due Date: 24/11/2022
