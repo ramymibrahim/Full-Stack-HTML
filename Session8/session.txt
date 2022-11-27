@@ -1,0 +1,15 @@
+Create Cart page
+localstorage
+BOM
+    window
+    screen
+    history
+    navigator
+    cookies
+
+call(obj), bind(obj), and apply([])
+OOP
+    anemic model
+    domain model
+Modules
+JQuery

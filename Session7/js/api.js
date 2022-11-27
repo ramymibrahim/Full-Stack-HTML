@@ -9,18 +9,14 @@
 // request.addEventListener("load", loadProducts);
 
 const request = fetch("https://warm-mesa-88190.herokuapp.com/api/products/");
-// request
-//   .then(function (response) {
-//     response.json().then((data) => {
-//       console.log(data);
-//     });
-//   })
-//   .catch(function (err) {
-//     console.log(err);
-//   })
-//   .finally(() => {
+request
+  .then((data) => {
+    request = fetch();
+    request.then(() => {});
+  })
+  .catch((err) => {})
+  .finally(() => {});
 
-//   });
 const getData = async () => {
   console.log("getData");
   let response = await request;
@@ -33,6 +29,9 @@ try {
   getData();
 } catch (err) {
   console.log(err);
+}
+finally{
+  
 }
 
 setTimeout(() => {
