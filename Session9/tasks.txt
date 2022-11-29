@@ -1,0 +1,9 @@
+JS	OOP: Products with Cart
+    Convert Product, CartLine, and Cart Objects into Class Objects
+    Add required methods to the above classes
+JS	API CRUD Operations
+    Use the following API to Add and Post Orders
+    Use Products/GetFeatured API to display Featured Products in Home Page
+    Implement login workflow using the following username and password {"email":"ramymibrahim@yahoo.com","password":"123456"}
+    Implement Add order request.
+    
