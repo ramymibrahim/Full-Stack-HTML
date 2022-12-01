@@ -1,0 +1,2 @@
+Convert the remaining pages shopdetail.html,cart.html, checkout.html, and contact.html into angular components
+and add their routes
