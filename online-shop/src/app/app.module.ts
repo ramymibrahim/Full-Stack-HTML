@@ -12,6 +12,13 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { CategoryComponent } from './components/category/category.component';
 import { ProductComponent } from './components/product/product.component';
 import { StartsComponent } from './components/starts/starts.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductsComponent } from './components/products/products.component';
+import { CartComponent } from './components/layouts/cart/cart.component';
+import { CartTableComponent } from './components/cart-table/cart-table.component';
+import { CartTotalComponent } from './components/cart-total/cart-total.component';
+import { DetailComponent } from './components/layouts/detail/detail.component';
+import { ContactComponent } from './components/layouts/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +30,16 @@ import { StartsComponent } from './components/starts/starts.component';
     CategoriesComponent,
     CategoryComponent,
     ProductComponent,
-    StartsComponent
+    StartsComponent,
+    ProductsComponent,
+    CartComponent,
+    CartTableComponent,
+    CartTotalComponent,
+    DetailComponent,
+    ContactComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

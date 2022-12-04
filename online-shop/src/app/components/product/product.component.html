@@ -1,10 +1,9 @@
 <div class="product-item bg-light mb-4">
   <div class="product-img position-relative overflow-hidden">
-    <img class="img-fluid w-100" [src]="product.imageUrl" alt="" />
+    <img class="img-fluid w-100" [src]="product.image" alt="" />
     <div class="product-action">
       <a
         class="btn btn-outline-dark btn-square"
-        href="#"
         (click)="addProductToCart()"
         ><i class="fa fa-shopping-cart"></i
       ></a>
@@ -21,7 +20,7 @@
   </div>
   <div class="text-center py-4">
     <a class="h6 text-decoration-none text-truncate" href="">{{
-      product.productName
+      product.name
     }}</a>
     <div class="d-flex align-items-center justify-content-center mt-2">
       <h5>{{ product.price - product.price * product.discount }}</h5>
@@ -31,7 +30,7 @@
     </div>
     <app-starts
       [rating]="product.rating"
-      [count]="product.ratingCount"
+      [count]="product.rating_count"
     ></app-starts>
   </div>
 </div>
