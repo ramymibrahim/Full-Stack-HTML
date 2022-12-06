@@ -8,14 +8,20 @@
 // request.send();
 // request.addEventListener("load", loadProducts);
 
-const request = fetch("https://warm-mesa-88190.herokuapp.com/api/products/");
-request
-  .then((data) => {
-    request = fetch();
-    request.then(() => {});
-  })
-  .catch((err) => {})
-  .finally(() => {});
+// const request = fetch("https://warm-mesa-88190.herokuapp.com/api/products/");
+// request
+//   .then((data) => {
+//     data.json().then((json_data) => {
+//       const request2 = fetch("");
+//       request2.then((data) => {
+//         data.json().then(dj=>{
+//           let req3
+//         })
+//       });
+//     });
+//   })
+//   .catch((err) => {})
+//   .finally(() => {});
 
 const getData = async () => {
   console.log("getData");
@@ -24,22 +30,22 @@ const getData = async () => {
   console.log(data);
 };
 
-console.log(0);
-try {
-  getData();
-} catch (err) {
-  console.log(err);
-}
-finally{
-  
-}
+// console.log(0);
+// try {
+//   getData();
+// } catch (err) {
+//   console.log(err);
+// }
+// finally{
 
-setTimeout(() => {
-  console.log("setTimeout");
-}, 0);
+// }
 
-let interval = setInterval(() => {
-  console.log("setInterval");
-}, 1000);
+// setTimeout(() => {
+//   console.log("setTimeout");
+// }, 0);
 
-console.log(1);
+// let interval = setInterval(() => {
+//   console.log("setInterval");
+// }, 1000);
+
+// console.log(1);
