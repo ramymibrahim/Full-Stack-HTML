@@ -636,7 +636,7 @@
         $(".quantityVal").change(function (e) {
           if (!e.target.value || e.target.value < 1) {
             $(this).val(1);
-            $(this).parent().children('.decBtn').attr("disabled", "disabled");
+            $(this).parent().children(".decBtn").attr("disabled", "disabled");
           }
         });
       });
@@ -651,6 +651,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/cart-oop.js"></script>
     <!-- <script src="js/cart.js"></script> -->
   </body>
 </html>
