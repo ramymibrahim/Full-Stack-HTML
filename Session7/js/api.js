@@ -4,24 +4,24 @@
 
 // };
 // const request = new XMLHttpRequest();
-// request.open("GET", "https://warm-mesa-88190.herokuapp.com/api/products/");
+// request.open("GET", "http://localhost:5000/api/products/");
 // request.send();
 // request.addEventListener("load", loadProducts);
 
-// const request = fetch("https://warm-mesa-88190.herokuapp.com/api/products/");
-// request
-//   .then((data) => {
-//     data.json().then((json_data) => {
-//       const request2 = fetch("");
-//       request2.then((data) => {
-//         data.json().then(dj=>{
-//           let req3
-//         })
-//       });
-//     });
-//   })
-//   .catch((err) => {})
-//   .finally(() => {});
+const request = fetch("http://localhost:5000/api/products/");
+request
+  .then((data) => {
+    data.json().then((json_data) => {
+      const request2 = fetch("");
+      request2.then((data) => {
+        data.json().then(dj=>{
+          let req3
+        })
+      });
+    });
+  })
+  .catch((err) => {})
+  .finally(() => {});
 
 const getData = async () => {
   console.log("getData");
