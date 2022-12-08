@@ -23,6 +23,8 @@ export class CartComponent {
         price: 100,
         rating: 4.5,
         rating_count: 45,
+        color:'white',
+        size:'s'
       },
     },
     {
@@ -40,6 +42,8 @@ export class CartComponent {
         price: 150,
         rating: 4.5,
         rating_count: 45,
+        color:'white',
+        size:'s'
       },
     },
   ];

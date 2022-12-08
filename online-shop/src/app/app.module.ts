@@ -19,6 +19,9 @@ import { CartTableComponent } from './components/cart-table/cart-table.component
 import { CartTotalComponent } from './components/cart-total/cart-total.component';
 import { DetailComponent } from './components/layouts/detail/detail.component';
 import { ContactComponent } from './components/layouts/contact/contact.component';
+import { ProductsFilterComponent } from './components/products-filter/products-filter.component';
+import { ProductsShopComponent } from './components/products-shop/products-shop.component';
+import { ProductsPaginationComponent } from './components/products-pagination/products-pagination.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import { ContactComponent } from './components/layouts/contact/contact.component
     CartTotalComponent,
     DetailComponent,
     ContactComponent,
+    ProductsFilterComponent,
+    ProductsShopComponent,
+    ProductsPaginationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

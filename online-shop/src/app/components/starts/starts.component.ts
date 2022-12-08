@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class StartsComponent {
   @Input() rating: number = 0;
   @Input() count: number = 0;
+  @Input() center: boolean = true;
 
   getClass(r: number): string {
     if (r <= this.rating) return 'fa fa-star text-primary mr-1';
