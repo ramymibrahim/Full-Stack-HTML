@@ -85,3 +85,4 @@ export class DetailComponent implements OnInit, AfterViewInit {
     this.storageService.addProducts(this.product, this.quantity);
   }
 }
+//
