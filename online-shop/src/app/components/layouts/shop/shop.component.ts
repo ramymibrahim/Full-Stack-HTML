@@ -25,17 +25,21 @@ export class ShopComponent implements OnInit {
     });
   }
 
+  getFilteredProducts(): Product[] {
+    return this.products.filter(
+      (p) => this.filterPrice(p) && this.filterSize(p) && this.filterColor(p)
+    );
+  }
   getProducts(): Product[] {
-    return this.products
-      .filter(
-        (p) => this.filterPrice(p) && this.filterSize(p) && this.filterColor(p)
-      )
-      .slice(
-        this.pageNumber * this.itemsPerPage,
-        this.pageNumber * this.itemsPerPage + this.itemsPerPage
-      );
+    return this.getFilteredProducts().slice(
+      this.pageNumber * this.itemsPerPage,
+      this.pageNumber * this.itemsPerPage + this.itemsPerPage
+    );
   }
 
+  getTotalCount() {
+    return this.getFilteredProducts().length;
+  }
   filterChange(filter: any) {
     this.filter = filter;
   }
@@ -55,5 +59,8 @@ export class ShopComponent implements OnInit {
   filterColor(p: Product) {
     if (this.filter.colors.includes('')) return true;
     return this.filter.colors.includes(p.color);
+  }
+  changePage(i: number) {
+    this.pageNumber = i;
   }
 }

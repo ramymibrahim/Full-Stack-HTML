@@ -3,14 +3,15 @@ import { CartLine } from 'src/app/interfaces/cart-line';
 import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css'],
+  selector: 'app-checkout',
+  templateUrl: './checkout.component.html',
+  styleUrls: ['./checkout.component.css'],
 })
-export class CartComponent {
+export class CheckoutComponent {
   constructor(private storageService: StorageService) {
     this.cartLines = storageService.getCartLines();
   }
+
   cartLines: CartLine[] = [];
 
   getTotal(): number {

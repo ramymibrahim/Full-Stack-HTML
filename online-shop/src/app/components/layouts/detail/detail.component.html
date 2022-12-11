@@ -58,16 +58,16 @@
           
             <div
               *ngFor="let s of sizes"
-              class="custom-control custom-radio custom-control-inline"
+              class="inline"
             >
               <input
                 type="radio"
-                class="custom-control-input"
                 [(ngModel)]="size"
                 [value]="s"
                 [ngModelOptions]="{ standalone: true }"
+                name="size"
               />
-              <label class="custom-control-label" for="size-5">{{s | uppercase}}</label>
+              <label>{{s | uppercase}}</label>
             </div>
           
         </div>
@@ -76,16 +76,15 @@
           
             <div
               *ngFor="let c of colors"
-              class="custom-control custom-radio custom-control-inline"
             >
               <input
                 type="radio"
-                class="custom-control-input"
                 [(ngModel)]="color"
                 [ngModelOptions]="{ standalone: true }"
                 [value]="c"
+                name="color"
               />
-              <label class="custom-control-label" for="color-1">{{
+              <label >{{
                 c | uppercase
               }}</label>
             </div>

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app-component/app.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/layouts/header/header.component';
 import { HomeComponent } from './components/layouts/home/home.component';
 import { FooterComponent } from './components/layouts/footer/footer.component';
@@ -22,6 +22,9 @@ import { ContactComponent } from './components/layouts/contact/contact.component
 import { ProductsFilterComponent } from './components/products-filter/products-filter.component';
 import { ProductsShopComponent } from './components/products-shop/products-shop.component';
 import { ProductsPaginationComponent } from './components/products-pagination/products-pagination.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -43,8 +46,17 @@ import { ProductsPaginationComponent } from './components/products-pagination/pr
     ProductsFilterComponent,
     ProductsShopComponent,
     ProductsPaginationComponent,
+    CheckoutComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

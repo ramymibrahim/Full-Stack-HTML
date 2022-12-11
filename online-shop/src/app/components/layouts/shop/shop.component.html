@@ -79,7 +79,7 @@
         </div>
 
         <div class="col-12">
-          <app-products-pagination></app-products-pagination>
+          <app-products-pagination (currentPageChange)="changePage($event)" [itemsPerPage]="itemsPerPage" [totalCount]="getTotalCount()"></app-products-pagination>
         </div>
       </div>
     </div>
